@@ -1,29 +1,27 @@
 {
-  "name": "goit-39-js-hw-08",
-  "version": "1.0.0",
+  "name": "parcel-project-template",
+  "version": "1.1.0",
   "description": "",
+  "main": "index.js",
+  "homepage": "https://goitacademy.github.io/parcel-project-template",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /parcel-project-template/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maksymkushnirov/goit-39-js-hw-08.git"
+    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
   },
-  "author": "Maksym Kushnirov <maksymkushnirov@gmail.com>",
+  "keywords": [],
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/maksymkushnirov/goit-39-js-hw-08/issues"
-  },
-  "homepage": "https://github.com/maksymkushnirov/goit-39-js-hw-08#readme",
-  "(dependencies)": {
-    "validator": "^13.7.0"
-  },
-  "dependencies": {
-    "validator": "^1.5.1"
+    "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "devDependencies": {
-    "parcel": "^2.0.1"
-  },
-  "keywords": []
-}
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "posthtml-include": "^1.6.2",
+    "sass": "^1.32.8"}
+  }
