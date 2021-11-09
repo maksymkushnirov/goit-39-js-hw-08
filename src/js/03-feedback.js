@@ -31,6 +31,7 @@ function populateTextarea() {
     });
   }
 }
+
 function onFormSubmit(event) {
   event.preventDefault();
   event.currentTarget.reset();
