@@ -1,3 +1,5 @@
+goit-39-js-hw-08
+
 # Parcel boilerplate
 
 ## Скрытые файлы
