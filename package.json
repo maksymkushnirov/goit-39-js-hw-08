@@ -5,7 +5,7 @@
   "scripts": {
     "start": "parcel src/index.html",
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html --public-url /goit-39-js-hw-08/"
   },
   "repository": {
     "type": "git",
