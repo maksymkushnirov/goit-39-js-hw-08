@@ -1,2 +1,2 @@
 # goit-39-js-hw-08
-Модульность кода + Веб-хранилище
+NPM. Webpack. JSON. Web Storage.
