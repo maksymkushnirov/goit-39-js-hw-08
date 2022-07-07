@@ -14,7 +14,7 @@ let dataInput = {};
 
 function onInputTextarea(event) {
   dataInput[event.target.name] = event.target.value;
-    //console.log(dataInput)
+  //console.log(dataInput)
   localStorage.setItem(STORAGE_INPUTS_KEY, JSON.stringify(dataInput));
 }
 
@@ -22,24 +22,23 @@ initForm();
 
 function initForm() {
   let filters = localStorage.getItem(STORAGE_INPUTS_KEY);
-if (filters) {
-  filters = JSON.parse(filters);
-//console.log(filters);
-        Object.entries(filters).forEach(([name, value]) => {
-           // console.log(refs.form.elements);
-            dataInput[name] = value;
-            refs.form.elements[name].value = value;
-        })
-        
-    }
+  if (filters) {
+    filters = JSON.parse(filters);
+    //console.log(filters);
+    Object.entries(filters).forEach(([name, value]) => {
+      // console.log(refs.form.elements);
+      dataInput[name] = value;
+      refs.form.elements[name].value = value;
+    });
+  }
 }
 function onFormSubmit(event) {
   event.preventDefault();
   event.currentTarget.reset();
-      console.log(dataInput)
+  console.log(dataInput);
   localStorage.removeItem(STORAGE_INPUTS_KEY);
   event.currentTarget.reset();
- dataInput = {}
-    refs.form.removeEventListener('submit', onFormSubmit)
-     // console.log(refs.form);
+  dataInput = {};
+  refs.form.removeEventListener('submit', onFormSubmit);
+  // console.log(refs.form);
 }
