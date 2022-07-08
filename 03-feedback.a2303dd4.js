@@ -4,4 +4,4 @@ var t=arguments[3],n="Expected a function",e=NaN,i="[object Symbol]",r=/^\s+|\s+
 },{}],"TTyb":[function(require,module,exports) {
 "use strict";var e=t(require("lodash.throttle"));function t(e){return e&&e.__esModule?e:{default:e}}const r={form:document.querySelector(".feedback-form"),textarea:document.querySelector(".feedback-form textarea")};r.form.addEventListener("submit",l),r.form.addEventListener("input",(0,e.default)(n,500));const o="feedback-form-state";let a={};function n(e){a[e.target.name]=e.target.value,localStorage.setItem(o,JSON.stringify(a))}function c(){let e=localStorage.getItem(o);e&&(e=JSON.parse(e),Object.entries(e).forEach(e=>{let[t,o]=e;a[t]=o,r.form.elements[t].value=o}))}function l(e){e.preventDefault(),e.currentTarget.reset(),console.log(a),localStorage.removeItem(o),e.currentTarget.reset(),a={},r.form.removeEventListener("submit",l)}c();
 },{"lodash.throttle":"FNyO"}]},{},["TTyb"], null)
-//# sourceMappingURL=/parcel-project-template/03-feedback.a2303dd4.js.map
+//# sourceMappingURL=/goit-39-js-hw-08/03-feedback.a2303dd4.js.map
